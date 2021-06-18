@@ -8,7 +8,7 @@ function App() {
         <h1 className="text">KONCOOL</h1>
       </header>
         <div className="app-box">
-          <div>Music1</div>
+          <div>Music2</div>
         </div>
     </div>
   );
