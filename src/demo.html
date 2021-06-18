@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KonCool</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Slick.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&family=Do+Hyeon&family=Noto+Sans+KR:wght@500&family=Roboto&family=Staatliches&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg">
+    <header>KONCOOL
+    </header>
+    <div class="carousel clearfix">
+        <div class="boxUp">
+            <img style="width:74%; padding-left: 80px;" src="img1/TMD3.png">
+        </div>
+    </div>
+    <div class="carousel clearfix"><!--start-1-->      
+        <div class="carousel-view clearfix"><!-- carousel-view -->           
+        <!--<div style="padding-left: 520px; padding-right: 10px; margin-top: 50px; background-color: aqua;">-->
+        
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/ฝนตกไฟม.jpg">
+                <h1>ฝนตกไหม</h1>
+            </div><!--end-box -->
+        
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/ฝันถึงแฟนเก่า1.jpg">
+                <h1>ฝันถึงแฟนเก่า</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/ถ้าเธอรักฉันจริง.jpg">
+                <h1>ถ้าเธอรักฉันจริง</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/เลือกคนที่เขารักเรา.jpg">
+                <h1>เลือกคนที่เขารักเรา</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/เดาไม่เก่ง.jpg">
+                <h1>เดาไม่เก่ง</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/ทีมรอเธอ.jpg">
+                <h1>ทีมรอเธอ</h1>
+            </div><!--end-box -->
+                                
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/ไปเถอะเธอ.jpg">
+                <h1>ไปเถอะเธอ</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/อยู่ในสาย.jpg">
+                <h1>อยู่ในสาย</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/คุยคนเดียวเก่ง.jpg">
+                <h1>คุยคนเดียวเก่ง</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/ตอนไม่ได้เจอ.jpg">
+                <h1>ตอนไม่ได้เจอ</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/ข้างกัน.jpg">
+                <h1>ข้างกัน</h1>
+            </div><!--end-box -->
+
+            <div class="box"><!--start-box -->
+                <img class="image" src="img1/ผ่านตา.jpg">
+                <h1>ผ่านตา</h1>
+            </div><!--end-box -->
+
+
+
+        <!--</div>-->
+        </div><!-- carousel-view -->
+    </div><!--end-1 -->
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+        $('.carousel-view').slick({
+            dots: false,
+            infinite: true,
+            speed: 600,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                breakpoint: 600,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+      </script>
+</body>
+</html>

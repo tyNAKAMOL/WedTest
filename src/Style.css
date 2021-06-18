@@ -1,0 +1,115 @@
+body,html {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Athiti', sans-serif;
+    background-color: aliceblue;
+    height: 100%;
+}
+header{
+    background-color: rgb(20, 19, 19);
+    font-family: 'Do Hyeon', sans-serif;
+    color:azure;
+    font-size: 30px;
+    padding: 15px;
+
+}
+.box{
+    background-color: rgb(12, 12, 12);
+    padding: 20px;
+    color:rgb(103, 247, 46);
+    font-size: 60px; 
+    text-align: center;
+}
+.boxUp{
+    align-items: center;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.image{
+    padding-left: 15px ;
+    width: 85%;
+}
+.main-content{
+    background-color: #5464bf;
+    max-width: 600px;
+    padding-left:100px ;
+    margin-top: 80px;
+    margin-left: 580px ;
+}
+.bg{
+    background: linear-gradient(135deg, #202125,#253547,#1f4c57);
+}
+.x{
+    font-size: 20px;   
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.carousel {
+    width: 1120px;
+    margin: 30px auto;
+}
+
+.carousel .boxUp{
+    width: 1120px;
+    margin: 0px auto;
+    
+}
+
+.carousel h1 {
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 0px 0px 5px 0px;
+    font-weight: normal;
+    color:white;
+}
+
+.carousel .box {
+    background: linear-gradient(135deg, #5464bf,#6a99ca,#6eb0be);
+    border-radius: 1.5%;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 20px;
+    margin: 20px;
+    float: left;
+    width: 33%;
+}
+
+
+.slick-prev, .slick-next {
+    background: url(arrows.png);
+    width: 22px;
+    height: 33px;
+    position: absolute;
+    top: 40%;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 100;
+}
+
+.slick-prev {
+    background-position: 0px;
+    left: 0px;
+}
+
+.slick-next {
+    background-position: -22px;
+    right: 0px;
+}
+
+@media only screen and (max-width: 1180px) {
+    .carousel {
+        width: 100%;
+    }
+}
