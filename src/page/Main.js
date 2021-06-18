@@ -3,7 +3,7 @@ const Main = ()=> {
     return(
         <div>
             <h1>ty</h1> 
-        </div>
+        </div> 
     )
 }
 export default Main;

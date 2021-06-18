@@ -1,13 +1,16 @@
- import {Switch,Route} from "react-router-dom";
- import Main from "./page/Main";
-
+import React from 'react';
+import './App.css';
 function App() {
   return (
-    <Switch>
-     <div>
-     <Route path="/" component={Main}></Route>
-     </div>
-    </Switch>
+    <div className="app">
+      <header className="header-1">
+
+        <h1 className="text">KONCOOL</h1>
+      </header>
+        <div className="app-box">
+          <div>Music1</div>
+        </div>
+    </div>
   );
 }
 
