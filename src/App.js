@@ -4,7 +4,6 @@ function App() {
   return (
     <div className="app">
       <header className="header-1">
-
         <h1 className="text">KONCOOL</h1>
       </header>
         <div className="app-box">
