@@ -2,24 +2,6 @@ import React from "react";
 import "./App.css";
 function App() {
   const Name = ["K", "O", "N", "C", "O", "O", "L"];
-  const data = [
-    { picture: "/img1/อยู่ในสาย.jpg", name: "อยู่ในสาย" },
-    { picture: "/img1/ฝนตกไฟม.jpg", name: "ฝนตกไหม" },
-    { picture: "/img1/เดาไม่เก่ง.jpg", name: "เดาไม่เก่ง" },
-    { picture: "/img1/คุยคนเดียวเก่ง.jpg", name: "คุยคนเดียวเก่ง" },
-  ];
-
-  function music() {
-    return data.map((key) => {
-      return (
-        <div className="app-boxmusic">
-          <img class="img" src={key.picture} />
-          <h1 className="nemeMusic">{key.name}</h1>
-        </div>
-      );
-    });
-  }
-
   function name() {
     return Name.map((key) => {
       return <div className="text">{key}</div>;
