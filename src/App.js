@@ -1,4 +1,8 @@
 import React from "react";
+// css carousel
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SimpleSlider from "./Carousel";
 import "./App.css";
 function App() {
   const Name = ["K", "O", "N", "C", "O", "O", "L"];
@@ -11,14 +15,21 @@ function App() {
   return (
     <div className="bg">
       <div className="header-left">
-        <div style={{ paddingLeft: "10px", paddingRight: "10px" }}>
-          <h1>{name()}</h1>
+        <div className="d">
+          <h1 style={{ paddingLeft: "10px" }}>{name()}</h1>
+        </div>
+        <div className="logo">
+          <i class="bx bxl-facebook-square" style={{ fontSize: "25px" }}></i>
+        </div>
+        <div className="logo">
+          <i class="bx bxl-instagram" style={{ fontSize: "25px" }}></i>
+        </div>
+        <div className="logo">
+          <i class="bx bxl-github" style={{ fontSize: "25px" }}></i>
         </div>
       </div>
-      <div className="app-content">
-        <div className="app-box">
-          <div>{music()}</div>
-        </div>
+      <div className="container">
+        <SimpleSlider></SimpleSlider>
       </div>
     </div>
   );
