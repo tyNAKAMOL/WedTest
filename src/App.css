@@ -1,7 +1,14 @@
-.bg {
+.dark-mode {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(135deg, #202125, #253547, #1f4c57);
+  display: flex;
+  align-items: center;
+}
+.light-mode {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #818596, #80afe5, #4dc1df);
   display: flex;
   align-items: center;
 }
@@ -169,3 +176,53 @@
 .d:hover {
   background-color: rgb(80, 78, 78);
 }
+.container2 {
+  width: 50px;
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  margin-bottom: 850px;
+  align-items: flex-start;
+  /* background: #04bf9d; */
+}
+.switch {
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #202125;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: rgb(122, 125, 128);
+}
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+/*  */

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // css carousel
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,9 +11,10 @@ function App() {
       return <div className="text">{key}</div>;
     });
   }
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className="bg">
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
       <div className="header-left">
         <div className="d">
           <h1 style={{ paddingLeft: "10px" }}>{name()}</h1>
@@ -30,6 +31,12 @@ function App() {
       </div>
       <div className="container">
         <SimpleSlider></SimpleSlider>
+      </div>
+      <div className="container2">
+        <label className="switch">
+          <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />
+          <span className="slider"></span>
+        </label>
       </div>
     </div>
   );
