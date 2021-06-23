@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from "./Carousel";
 import "./App.css";
+import SearchBar from "./components/SearchBar";
+
 function App() {
   const Name = ["K", "O", "N", "C", "O", "O", "L"];
   function name() {
@@ -30,6 +32,12 @@ function App() {
         </div>
       </div>
       <div className="container">
+        <div>
+          <SearchBar dark={darkMode} />
+        </div>
+        <div className="container-logo">
+          <img className="img-TMD" src="/img1/TMD3.png" />
+        </div>
         <SimpleSlider></SimpleSlider>
       </div>
       <div className="container2">
@@ -37,6 +45,9 @@ function App() {
           <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />
           <span className="slider"></span>
         </label>
+      </div>
+      <div className={darkMode ? "icon-light" : "icon-dark"}>
+        <i class={darkMode ? "bx bxs-sun" : "bx bxs-moon"}></i>
       </div>
     </div>
   );

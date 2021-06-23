@@ -1,0 +1,18 @@
+d-input {
+  height: 38px;
+  width: 600px;
+  margin-left: 10px;
+  margin-bottom: 60px;
+  /* padding-bottom: 10px; */
+  border-radius: 100px;
+  background-color: rgb(55, 55, 65);
+}
+
+.dm {
+  display: flex;
+  color: aliceblue;
+}
+.lm {
+  display: flex;
+  color: rgb(57, 59, 61);
+}
