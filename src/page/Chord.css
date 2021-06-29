@@ -1,0 +1,23 @@
+.container-pathchord {
+  background-color: blueviolet;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.play-music {
+  background-color: rgb(253, 252, 250);
+  height: 100vh;
+  width: 100vw;
+}
+.chord {
+  background-color: rgb(236, 29, 29);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.suggest-song {
+  background-color: rgb(29, 32, 236);
+  height: 100vh;
+  width: 100vw;
+}
