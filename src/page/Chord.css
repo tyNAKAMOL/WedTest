@@ -5,19 +5,61 @@
   display: flex;
 }
 .play-music {
-  background-color: rgb(253, 252, 250);
-  height: 100vh;
-  width: 100vw;
-}
-.chord {
-  background-color: rgb(236, 29, 29);
+  /* background-color: rgb(253, 252, 250); */
   height: 100vh;
   width: 100vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.chord {
+  /* background-color: rgb(236, 29, 29); */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .suggest-song {
-  background-color: rgb(29, 32, 236);
+  /* background-color: rgb(29, 32, 236); */
   height: 100vh;
   width: 100vw;
+}
+.img-1 {
+  width: 40vw;
+  /* height: 80vh; */
+}
+.img-bum {
+  width: 20vw;
+}
+.container-album {
+  background-color: rgb(52, 53, 52);
+  height: 60vh;
+  width: 20vw;
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+  border-radius: 4%;
+}
+@media (max-width: 768px) {
+  .container-pathchord {
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+  }
+  .container-album {
+    background-color: rgb(52, 53, 52);
+    height: 80vh;
+    width: 60vw;
+  }
+  .img-bum {
+    width: 60vw;
+  }
+  .img-1 {
+    width: 80vw;
+    /* height: 80vh; */
+  }
 }
