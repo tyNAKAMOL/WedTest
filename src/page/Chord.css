@@ -1,3 +1,8 @@
+.head-menu {
+  background-color: rgb(36, 36, 36);
+  height: 6vh;
+  width: 100vw;
+}
 .container-pathchord {
   background-color: blueviolet;
   height: 100vh;
@@ -10,25 +15,41 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-top: 50px;
+  align-items: flex-start;
+  padding-top: 40px;
 }
 .chord {
-  /* background-color: rgb(236, 29, 29); */
+  background-color: rgb(236, 29, 29);
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
 }
 .suggest-song {
   /* background-color: rgb(29, 32, 236); */
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  /* padding-top: 35px; */
+  align-items: center;
+  flex-direction: column;
 }
 .img-1 {
-  width: 40vw;
+  width: 35vw;
   /* height: 80vh; */
+}
+.N {
+  padding-left: 10px;
+  padding-top: 5px;
+  color: aliceblue;
+  font-size: 30px;
+  /* background-color: aqua; */
+}
+.N:hover {
+  color: rgb(247, 102, 210);
 }
 .img-bum {
   width: 20vw;
@@ -39,11 +60,22 @@
   width: 20vw;
   display: block;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 20px;
   border-radius: 4%;
+  /* margin-bottom: 200px; */
 }
-@media (max-width: 768px) {
+.foot {
+  background-color: rgb(43, 220, 226);
+  height: 20vh;
+  width: 100vw;
+}
+@media (max-width: 1250px) {
+  .container-pathchord {
+    background-color: rgb(43, 107, 226);
+  }
+}
+@media (max-width: 800px) {
   .container-pathchord {
     background-color: blueviolet;
     height: 100vh;
@@ -61,5 +93,25 @@
   .img-1 {
     width: 80vw;
     /* height: 80vh; */
+  }
+}
+@media (max-width: 600px) {
+  .container-pathchord {
+    background-color: rgb(43, 226, 119);
+  }
+  .container-album {
+    background-color: rgb(52, 53, 52);
+    height: 70vh;
+    width: 60vw;
+  }
+  .foot {
+    background-color: rgb(43, 220, 226);
+    height: 20vh;
+    width: 100vw;
+  }
+}
+@media (max-width: 480px) {
+  .container-pathchord {
+    background-color: rgb(226, 223, 43);
   }
 }
