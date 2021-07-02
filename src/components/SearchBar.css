@@ -40,3 +40,9 @@ input {
 .dropSearch:hover {
   background-color: rgb(120, 150, 250);
 }
+@media (max-width: 480px) {
+  input {
+    height: 35px;
+    width: 300px;
+  }
+}
