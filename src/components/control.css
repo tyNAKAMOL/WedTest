@@ -1,0 +1,25 @@
+.control-panel {
+  padding: 15px 2px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+.timer {
+  padding-top: 15px;
+  margin: 0 15px;
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(196, 196, 196);
+}
+.B-play {
+  background: #6b6f70;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+  margin-bottom: 3px;
+}
+.B-play:hover {
+  background: #59c4ee;
+}

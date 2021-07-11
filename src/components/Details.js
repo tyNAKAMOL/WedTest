@@ -1,16 +1,16 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import "./Player.css";
 
 function Details() {
   const Location = useLocation();
   const songName = Location.params?.song;
   return (
-    <div className="details">
-      <div className="de-img">
-        <img src="" />
+    <div className="box-xname">
+      <div className="nsong">
+        <h2 style={{ fontSize: "24px" }}>{songName}</h2>
       </div>
-      <h3>{songName}</h3>
-      <h3>Three Man Down</h3>
+      <div className="nsinger">Three Man Down</div>
     </div>
   );
 }

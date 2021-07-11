@@ -6,39 +6,41 @@
 .containerHW {
   /* display: flex;
   flex-direction: ; */
+  background: linear-gradient(135deg, #818596, #80afe5, #4dc1df);
   width: 100vw;
   height: 100vh;
 }
 .container-pathchord {
-  background-color: blueviolet;
-  height: 100vh;
+  /* background-color: blueviolet; */
+  height: 79vh;
   width: 100vw;
   display: flex;
   /* flex-direction: column; */
   /* align-items: unset; */
 }
 .play-music {
-  background-color: rgb(212, 152, 31);
-  height: 100vh;
-  width: 100vw;
+  /* background-color: rgb(212, 152, 31); */
+  height: 80vh;
+  width: 80vw;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  /* padding-top: 40px; */
+  /* align-items: flex-start; */
+  /* padding-left: 40px; */
 }
 .chord {
-  background-color: rgb(236, 29, 29);
-  height: 100vh;
-  width: 100vw;
+  /* background-color: rgb(236, 29, 29); */
+  height: 80vh;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  /* padding: 0 50px; */
 }
 .suggest-song {
-  background-color: rgb(29, 32, 236);
-  height: 100vh;
-  width: 100vw;
+  /* background-color: rgb(29, 32, 236); */
+  height: 80vh;
+  width: 80vw;
   display: flex;
   justify-content: flex-start;
   /* padding-top: 35px; */
@@ -60,32 +62,53 @@
   color: rgb(247, 102, 210);
 }
 .img-bum {
-  width: 20vw;
+  border-radius: 3%;
+  width: 15vw;
 }
 .container-album {
   background-color: rgb(52, 53, 52);
-  height: 60vh;
-  width: 20vw;
-  display: block;
-  justify-content: center;
+  height: 58vh;
+  width: 24vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   padding-top: 20px;
   border-radius: 4%;
   /* margin-bottom: 200px; */
 }
 .foot {
-  background-color: rgb(43, 220, 226);
-  height: 20vh;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(245, 237, 242);
+  height: 30vh;
   width: 100vw;
 }
-@media (max-width: 1250px) {
+.img-me {
+  margin-top: 5px;
+  /* margin-left: 100px; */
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+}
+.foot i {
+  padding: 10px;
+  font-size: 32px;
+}
+.foot i:hover {
+  color: rgb(247, 102, 210);
+}
+@media (max-width: 1080px) {
   .container-pathchord {
     background-color: rgb(43, 107, 226);
   }
 }
 @media (max-width: 800px) {
   .container-pathchord {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: block;
     /* padding: 10px; */
     justify-content: center;
@@ -106,7 +129,7 @@
 }
 @media (max-width: 600px) {
   .container-pathchord {
-    background-color: rgb(43, 226, 119);
+    /* background-color: rgb(43, 226, 119); */
   }
   .container-album {
     background-color: rgb(52, 53, 52);
@@ -121,7 +144,7 @@
 }
 @media (max-width: 480px) {
   .container-pathchord {
-    background-color: rgb(226, 223, 43);
+    /* background-color: rgb(226, 223, 43); */
     height: 100%;
     width: 100%;
     /* padding: 10px; */
@@ -133,8 +156,12 @@
   .containerHW {
     display: block;
     /* flex-direction: column; */
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
+  .img-bum {
+    width: 50vw;
+  }
+
   /* .play-music {
     background-color: rgb(212, 152, 31);
     height: 100%;

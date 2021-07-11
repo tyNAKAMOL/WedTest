@@ -24,6 +24,7 @@ export default function Chord() {
           <Link
             style={{
               textDecoration: "none",
+              paddingLeft: "20px",
             }}
             to={{
               pathname: "/",
@@ -35,7 +36,7 @@ export default function Chord() {
         </div>
         <div
           style={{
-            backgroundColor: "pink",
+            // backgroundColor: "pink",
             justifyContent: "center",
             display: "flex",
             paddingTop: "30px",
@@ -49,7 +50,6 @@ export default function Chord() {
           <div className="play-music">
             <div className="container-album">
               <img className="img-bum" src={album(a)} />
-              <p style={{ color: "white" }}>{a} - Three Man Down</p>
               <Player />
             </div>
           </div>
@@ -60,9 +60,13 @@ export default function Chord() {
           <div className="suggest-song">
             <div
               style={{
-                // backgroundColor: "orange",
-                height: "100vh",
-                paddingTop: "50px",
+                backgroundColor: "rgb(52, 53, 52)",
+                height: "555px",
+                width: "320px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                borderRadius: "5%",
               }}
             >
               {songname.map((v) => {
@@ -70,6 +74,15 @@ export default function Chord() {
                   <Link
                     style={{
                       textDecoration: "none",
+                      background:
+                        "linear-gradient(135deg, #818596, #80afe5, #4dc1df)",
+                      borderRadius: "4%",
+                      maxWidth: "135px",
+                      maxHeight: "150px",
+                      margin: "5px",
+                      padding: "10px",
+                      position: "relative",
+                      textAlign: "center",
                     }}
                     to={{
                       pathname: "/chord",
@@ -77,15 +90,44 @@ export default function Chord() {
                     }}
                     // className="app-boxmusic"
                   >
+                    {/* <div
+                    style={{
+                      backgroundColor: "rgb(36, 36, 36)",
+                      width: "100%",
+                      height: "100%",
+                      marginTop: "50px",
+                    }} */}
+
                     <img class="img" src={"/img1/" + v + ".jpg"} />
                     <h1 className="nemeMusic">{v}</h1>
                   </Link>
+                  //{" "}
                 );
               })}
             </div>
           </div>
         </div>
-        {/* <div className="foot">ty</div> */}
+        <div
+          className="foot"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img className="img-me" src="/img1/me1.jpg" />
+          <h2>Nakamol Saeheng</h2>
+          <div
+            style={{
+              height: "50px",
+              // marginTop: "120px",
+              // backgroundColor: "white",
+            }}
+          >
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-instagram-alt"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-github"></i>
+            <i class="bx bxl-youtube"></i>
+          </div>
+        </div>
       </div>
     </div>
   );

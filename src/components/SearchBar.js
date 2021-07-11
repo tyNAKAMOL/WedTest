@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 
 function SearchBar() {
   const [searchText, setSearchText] = useState("");
-
+  // const [textEnter, settextEnter] = useState("");
+  const clearInput = () => {
+    setSearchText("");
+  };
   return (
     <div>
       {/* <div className={dark ? "dm" : "lm"}> */}
@@ -27,6 +30,7 @@ function SearchBar() {
         value={searchText}
         onChange={(event) => {
           setSearchText(event.target.value);
+          // settextEnter(searchText);
         }}
       />
       {JSONDATA.filter((val) => {
@@ -39,6 +43,7 @@ function SearchBar() {
         return (
           <div key={key}>
             <Link
+              onClick={clearInput}
               style={{
                 textDecoration: "none",
               }}
