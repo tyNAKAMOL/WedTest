@@ -2,7 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Details from "./Details";
 import Control from "./Control";
-import song from "./song/ไปเถอะเธอ.mp3";
+import DATA from "./Data.json";
+// import song from "../../public/song/";
 import "./Player.css";
 import "./Thumb.css";
 
@@ -10,9 +11,17 @@ function Player() {
   const Location = useLocation();
   const s = Location.params?.song;
   function song1(x) {
-    return "./song/" + x + ".mp3";
+    for (var i = 0; i < DATA.length; i++) {
+      if (DATA[i].name == x) {
+        console.log(DATA[i].data.song);
+        return DATA[i].data.song;
+      }
+    }
+    // console.log(x);
+    // console.log(song);
+    // return "/song/" + x + ".mp3";
   }
-
+  // console.log(song);
   const audioRef = useRef();
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -75,7 +84,6 @@ function Player() {
 
   return (
     <div className="player">
-      <div>{song}</div>
       <Details />
       <Control
         play={play}
@@ -115,6 +123,7 @@ function Player() {
           setDuration(e.currentTarget.duration.toFixed(2));
         }}
         src={song1(s)}
+        type="audio/mpeg"
       ></audio>
     </div>
   );

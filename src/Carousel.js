@@ -69,7 +69,7 @@ export default class Responsive extends Component {
               <CustomSlide
                 // index={index}
                 name={value.name}
-                picture={value.picture}
+                picture={value.data.picture}
               ></CustomSlide>
             );
           })}

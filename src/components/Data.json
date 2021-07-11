@@ -1,13 +1,79 @@
 [
-  { "picture": "/img1/อยู่ในสาย.jpg", "name": "อยู่ในสาย" },
-  { "picture": "/img1/ฝนตกไฟม.jpg", "name": "ฝนตกไหม" },
-  { "picture": "/img1/เดาไม่เก่ง.jpg", "name": "เดาไม่เก่ง" },
-  { "picture": "/img1/คุยคนเดียวเก่ง.jpg", "name": "คุยคนเดียวเก่ง" },
-  { "picture": "/img1/ถ้าเธอรักฉันจริง.jpg", "name": "ถ้าเธอรักฉันจริง" },
-  { "picture": "/img1/ฝันถึงแฟนเก่า.jpg", "name": "ฝันถึงแฟนเก่า" },
-  { "picture": "/img1/ไปเถอะเธอ.jpg", "name": "ไปเถอะเธอ" },
-  { "picture": "/img1/ทีมรอเธอ.jpg", "name": "ทีมรอเธอ" },
-  { "picture": "/img1/เลือกคนที่เขารักเรา.jpg", "name": "เลือกคนที่เขารักเรา" },
-  { "picture": "/img1/ข้างกัน.jpg", "name": "ข้างกัน" },
-  { "picture": "/img1/TimeZone.jpg", "name": "Time zone" }
+  {
+    "name": "อยู่ในสาย",
+    "data": {
+      "picture": "/img1/อยู่ในสาย.jpg",
+      "song": "/song/อยู่ในสาย.mp3"
+    }
+  },
+  {
+    "name": "ฝนตกไหม",
+    "data": {
+      "picture": "/img1/ฝนตกไหม.jpg",
+      "song": "/song/ฝนตกไหม.mp3"
+    }
+  },
+  {
+    "name": "เดาไม่เก่ง",
+    "data": {
+      "picture": "/img1/เดาไม่เก่ง.jpg",
+      "song": "/song/เดาไม่เก่ง.mp3"
+    }
+  },
+  {
+    "name": "คุยคนเดียวเก่ง",
+    "data": {
+      "picture": "/img1/คุยคนเดียวเก่ง.jpg",
+      "song": "./song/คุยคนเดียวเก่ง.mp3"
+    }
+  },
+  {
+    "name": "ถ้าเธอรักฉันจริง",
+    "data": {
+      "picture": "/img1/ถ้าเธอรักฉันจริง.jpg",
+      "song": "./song/ถ้าเธอรักฉันจริง.mp3"
+    }
+  },
+  {
+    "name": "ฝันถึงแฟนเก่า",
+    "data": {
+      "picture": "/img1/ฝันถึงแฟนเก่า.jpg",
+      "song": "/song/ฝันถึงแฟนเก่า.mp3"
+    }
+  },
+  {
+    "name": "ไปเถอะเธอ",
+    "data": {
+      "picture": "/img1/ไปเถอะเธอ.jpg",
+      "song": "/song/ไปเถอะเธอ.mp3"
+    }
+  },
+  {
+    "name": "ทีมรอเธอ",
+    "data": {
+      "picture": "/img1/ทีมรอเธอ.jpg",
+      "song": "/song/ทีมรอเธอ.mp3"
+    }
+  },
+  {
+    "name": "เลือกคนที่เขารักเรา",
+    "data": {
+      "picture": "/img1/เลือกคนที่เขารักเรา.jpg",
+      "song": "/song/เลือกคนที่เขารักเรา.mp3"
+    }
+  },
+  {
+    "name": "ข้างกัน",
+    "data": {
+      "picture": "/img1/ข้างกัน.jpg",
+      "song": "/song/ข้างกัน.mp3"
+    }
+  },
+  {
+    "name": "Time zone",
+    "data": {
+      "picture": "/img1/TimeZone.jpg",
+      "song": "/song/Time Zone.mp3"
+    }
+  }
 ]
