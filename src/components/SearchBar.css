@@ -1,10 +1,10 @@
 input {
-  height: 38px;
-  width: 400px;
+  height: 25px;
+  width: 220px;
   margin-left: 10px;
   padding-left: 20px;
-  border-radius: 100px;
-  background-color: rgb(55, 55, 65);
+  border-radius: 10px;
+  background-color: rgb(189, 189, 219);
   color: azure;
   font-size: 15px;
   font-weight: 100;

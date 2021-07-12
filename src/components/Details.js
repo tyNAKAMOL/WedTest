@@ -8,7 +8,7 @@ function Details() {
   return (
     <div className="box-xname">
       <div className="nsong">
-        <h2 style={{ fontSize: "24px" }}>{songName}</h2>
+        <h2 style={{ fontSize: "17px" }}>{songName}</h2>
       </div>
       <div className="nsinger">Three Man Down</div>
     </div>

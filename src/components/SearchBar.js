@@ -25,7 +25,7 @@ function SearchBar() {
       {/* </div> */}
       <input
         type="text"
-        placeholder="Search..."
+        placeholder="Search your music..."
         autoComplete="off"
         value={searchText}
         onChange={(event) => {

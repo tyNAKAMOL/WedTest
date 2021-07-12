@@ -199,7 +199,7 @@ a:hover {
   padding-right: 10px;
   align-items: flex-start;
   height: 100vh;
-  background-color: #d16c1f;
+  /* background-color: #d16c1f; */
 }
 .Incon-s-m {
   display: flex;
@@ -207,7 +207,7 @@ a:hover {
   padding-right: 10px;
   align-items: flex-start;
   height: 100vh;
-  background-color: #0b9bee;
+  /* background-color: #0b9bee; */
 }
 .switch {
   position: relative;

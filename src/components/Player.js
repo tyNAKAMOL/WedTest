@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Details from "./Details";
+
 import Control from "./Control";
 import DATA from "./Data.json";
 // import song from "../../public/song/";
@@ -13,15 +13,11 @@ function Player() {
   function song1(x) {
     for (var i = 0; i < DATA.length; i++) {
       if (DATA[i].name == x) {
-        console.log(DATA[i].data.song);
         return DATA[i].data.song;
       }
     }
-    // console.log(x);
-    // console.log(song);
-    // return "/song/" + x + ".mp3";
   }
-  // console.log(song);
+
   const audioRef = useRef();
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -55,7 +51,15 @@ function Player() {
     audio.currentTime = (audio.duration / 100) * e.target.value;
     setPercentge(e.target.value);
   };
-
+  // if (reSet) {
+  //   if (isPlaying) {
+  //     setIsPlaying(false);
+  //   }
+  //   if (duration != 0) {
+  //     setDuration(0);
+  //   }
+  //   // setCurrentTime(0);
+  // }
   const play = () => {
     const audio = audioRef.current;
     audio.volume = 0.1;
@@ -84,13 +88,14 @@ function Player() {
 
   return (
     <div className="player">
-      <Details />
-      <Control
-        play={play}
-        isPlaying={isPlaying}
-        duration={duration}
-        currentTime={currentTime}
-      />
+      <div>
+        <Control
+          play={play}
+          isPlaying={isPlaying}
+          duration={duration}
+          currentTime={currentTime}
+        />
+      </div>
 
       <div className="slider-container">
         <div

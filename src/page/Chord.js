@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import "./Chord.css";
 import { Link } from "react-router-dom";
+import Details from "../components/Details";
 import SearchBar from "../components/SearchBar";
 import Player from "../components/Player";
 
@@ -15,7 +16,7 @@ export default function Chord() {
   function album(x) {
     return "/img1/" + x + ".jpg";
   }
-  const songname = ["ถ้าเธอรักฉันจริง", "ไปเถอะเธอ", "ข้างกัน"];
+  const songname = ["ถ้าเธอรักฉันจริง", "ไปเถอะเธอ"];
 
   return (
     <div>
@@ -34,38 +35,111 @@ export default function Chord() {
             KONCOOL
           </Link>
         </div>
-        <div
+        {/* <div
           style={{
-            // backgroundColor: "pink",
+            backgroundColor: "pink",
             justifyContent: "center",
+            paddingLeft: "50px",
             display: "flex",
             paddingTop: "30px",
             height: "10%",
           }}
         >
-          <SearchBar />
-        </div>
+      </div> */}
         {/* <div> */}
         <div className="container-pathchord ">
-          <div className="play-music">
-            <div className="container-album">
-              <img className="img-bum" src={album(a)} />
-              <Player />
+          <div className="container-player">
+            <div className="contect-up">
+              <div className="s-Or-a">
+                <div style={{ marginTop: "15px" }}>
+                  <SearchBar />
+                </div>
+              </div>
+              <div className="chord">
+                <img className="img-1" src={flieName(a)} />
+              </div>
+              <div className="suggest-song">
+                <div
+                  style={{
+                    // backgroundColor: "rgb(52, 53, 52)",
+                    height: "55vh",
+                    width: "18vw",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+
+                    borderRadius: "2%",
+                  }}
+                >
+                  {songname.map((v) => {
+                    return (
+                      <Link
+                        className="suggest-song-2"
+                        to={{
+                          pathname: "/chord",
+                          params: { song: v },
+                        }}
+                      >
+                        <img class="img" src={"/img1/" + v + ".jpg"} />
+                        <h1 className="nemeMusic">{v}</h1>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+            <div className="contect-down">
+              <div
+                style={{
+                  backgroundColor: "pink",
+                  marginLeft: "40px",
+                  height: "80%",
+                  width: "20%",
+                  display: "flex",
+                  alignItems: "flex-end",
+                }}
+              >
+                <img className="img-bum" src={album(a)} />
+              </div>
+              <div
+                style={{
+                  // backgroundColor: "black",
+                  width: "15%",
+                  marginLeft: "25px",
+                }}
+              >
+                <Details />
+              </div>
+              <div
+                style={{
+                  // backgroundColor: "blue",
+                  marginLeft: "30px",
+                  height: "100%",
+                  width: "50%",
+                }}
+              >
+                <Player />
+              </div>
             </div>
           </div>
-          <div className="chord">
+          {/* <div className="play-music">
+            <div className="container-album">
+            </div>
+          </div> */}
+          {/* <div className="chord">
             <img className="img-1" src={flieName(a)} />
-          </div>
+          </div> */}
 
-          <div className="suggest-song">
+          {/* <div className="suggest-song">
             <div
               style={{
                 backgroundColor: "rgb(52, 53, 52)",
-                height: "555px",
-                width: "320px",
+                height: "542px",
+                width: "165px",
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
+                marginRight: "50px",
                 borderRadius: "5%",
               }}
             >
@@ -88,24 +162,14 @@ export default function Chord() {
                       pathname: "/chord",
                       params: { song: v },
                     }}
-                    // className="app-boxmusic"
                   >
-                    {/* <div
-                    style={{
-                      backgroundColor: "rgb(36, 36, 36)",
-                      width: "100%",
-                      height: "100%",
-                      marginTop: "50px",
-                    }} */}
-
                     <img class="img" src={"/img1/" + v + ".jpg"} />
                     <h1 className="nemeMusic">{v}</h1>
                   </Link>
-                  //{" "}
                 );
               })}
             </div>
-          </div>
+          </div> */}
         </div>
         <div
           className="foot"
@@ -113,19 +177,26 @@ export default function Chord() {
           data-aos-anchor-placement="bottom-bottom"
         >
           <img className="img-me" src="/img1/me1.jpg" />
-          <h2>Nakamol Saeheng</h2>
           <div
             style={{
-              height: "50px",
-              // marginTop: "120px",
-              // backgroundColor: "white",
+              // backgroundColor: "blue",
+              display: "flex",
+              flexDirection: "column",
+              marginLeft: "10px",
             }}
           >
-            <i class="bx bxl-facebook-circle"></i>
-            <i class="bx bxl-instagram-alt"></i>
-            <i class="bx bxl-twitter"></i>
-            <i class="bx bxl-github"></i>
-            <i class="bx bxl-youtube"></i>
+            <h3 style={{ paddingLeft: "12px" }}>Nakamol Saeheng</h3>
+            <div
+              style={{
+                height: "50px",
+              }}
+            >
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-instagram-alt"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-github"></i>
+              <i class="bx bxl-youtube"></i>
+            </div>
           </div>
         </div>
       </div>

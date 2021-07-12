@@ -47,7 +47,7 @@ function Main() {
       <div className="container">
         <div
           style={{
-            backgroundColor: "orange",
+            // backgroundColor: "orange",
             display: "flex",
             paddingTop: "40px",
             justifyContent: "center",
@@ -61,7 +61,7 @@ function Main() {
         </div>
         <div
           style={{
-            backgroundColor: "red",
+            // backgroundColor: "red",
             display: "flex",
             justifyContent: "center",
             paddingLeft: "45px",
@@ -78,13 +78,13 @@ function Main() {
             display: "flex",
             justifyContent: "center",
             marginTop: "30px",
-            backgroundColor: "green",
+            // backgroundColor: "green",
             alignItems: "center",
           }}
         >
           <div
             style={{
-              backgroundColor: "blue",
+              // backgroundColor: "blue",
               maxWidth: "780px",
             }}
           >
